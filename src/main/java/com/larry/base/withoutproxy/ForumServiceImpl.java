@@ -1,6 +1,6 @@
-package com.larry.withoutproxy;
+package com.larry.base.withoutproxy;
 
-import com.larry.Utils.PerformanceMonitor;
+import com.larry.base.Utils.PerformanceMonitor;
 
 /**
  * Created by larry on 15-8-25.
@@ -9,7 +9,7 @@ import com.larry.Utils.PerformanceMonitor;
 public class ForumServiceImpl implements ForumService {
     public void removeTopic(int topicId) {
         //开始对该方法进行性能监视
-        PerformanceMonitor.begin("com.larry.withoutproxy.ForumServiceImpl.removeTopic");
+        PerformanceMonitor.begin("com.larry.base.withoutproxy.ForumServiceImpl.removeTopic");
 
         System.out.println("模拟删除Topic记录：" + topicId);
 
@@ -25,7 +25,7 @@ public class ForumServiceImpl implements ForumService {
 
     public void removeForum(int forumId) {
         //开始对该方法进行性能监视
-        PerformanceMonitor.begin("com.larry.withoutproxy.ForumServiceImpl.removeForum");
+        PerformanceMonitor.begin("com.larry.base.withoutproxy.ForumServiceImpl.removeForum");
 
         System.out.println("模拟删除Forum记录：" + forumId);
 

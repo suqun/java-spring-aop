@@ -1,6 +1,6 @@
-package com.larry.jkdproxy;
+package com.larry.base.jkdproxy;
 
-import com.larry.Utils.PerformanceMonitor;
+import com.larry.base.Utils.PerformanceMonitor;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -21,7 +21,7 @@ public class PerformanceHandler implements InvocationHandler{
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         //开始对方法进行性能监视
-        PerformanceMonitor.begin(target.getClass().getName()+"."+method.getName());
+        PerformanceMonitor.begin(target.getClass().getName() + "." + method.getName());
 
         //通过反射方法调用业务类的目标方法
         Object object = method.invoke(target,args);

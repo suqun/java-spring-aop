@@ -1,4 +1,4 @@
-package com.larry.jkdproxy;
+package com.larry.base.jkdproxy;
 
 import java.lang.reflect.Proxy;
 

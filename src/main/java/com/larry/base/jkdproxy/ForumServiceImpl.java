@@ -1,10 +1,10 @@
-package com.larry.cglibproxy;
+package com.larry.base.jkdproxy;
 
 /**
  * Created by larry on 15-8-25.
  * 移除横切逻辑
  */
-public class ForumServiceImpl{
+public class ForumServiceImpl implements ForumService {
     public void removeTopic(int topicId) {
 //        //开始对该方法进行性能监视
 //        PerformanceMonitor.begin("com.larry.withoutproxy.ForumServiceImpl.removeTopic");

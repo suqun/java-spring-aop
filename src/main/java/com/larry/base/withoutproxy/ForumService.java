@@ -1,4 +1,4 @@
-package com.larry.jkdproxy;
+package com.larry.base.withoutproxy;
 
 /**
  * Created by larry on 15-8-25.

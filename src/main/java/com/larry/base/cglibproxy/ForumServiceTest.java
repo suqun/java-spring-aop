@@ -1,4 +1,4 @@
-package com.larry.cglibproxy;
+package com.larry.base.cglibproxy;
 
 /**
  * Created by larry on 15-8-25.

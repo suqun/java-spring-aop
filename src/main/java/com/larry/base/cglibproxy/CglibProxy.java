@@ -1,6 +1,6 @@
-package com.larry.cglibproxy;
+package com.larry.base.cglibproxy;
 
-import com.larry.Utils.PerformanceMonitor;
+import com.larry.base.Utils.PerformanceMonitor;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -24,7 +24,7 @@ public class CglibProxy implements MethodInterceptor {
     //拦截父类所有方法的调用
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         //开始对方法进行性能监视
-        PerformanceMonitor.begin(o.getClass().getName()+"."+method.getName());
+        PerformanceMonitor.begin(o.getClass().getName() + "." + method.getName());
         //通过代理类调用父类中的方法
         Object result = methodProxy.invokeSuper(o,objects);
 
