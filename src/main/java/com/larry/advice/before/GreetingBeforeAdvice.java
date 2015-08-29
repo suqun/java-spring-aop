@@ -1,4 +1,4 @@
-package com.larry.advice.beforeAdvice;
+package com.larry.advice.before;
 
 
 import org.springframework.aop.MethodBeforeAdvice;

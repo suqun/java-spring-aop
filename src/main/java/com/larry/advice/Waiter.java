@@ -1,4 +1,4 @@
-package com.larry.advice.beforeAdvice;
+package com.larry.advice;
 
 /**
  * Created by larry on 15-8-27.
